@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Mawan Wibu</title>
+    <!--Berfungsi untuk mengatur gaya dari html, tag style ini selalu berada pada head -->
+    <style> 
+        .DivBuatan {     
+            /*Ini berfungsi untuk mendeklarasi kelas yang ada pada elemen elemen pada body html
+            penulisan class diawali dengan "." */
+            border: 7px outset rgb(0, 41, 128);
+            background-color: azure;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            color: rgb(91, 91, 91);
+
+        }
+
+        .CenterPic{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .mushoku:hover {
+            color: rgb(0, 149, 255);
+        }
+
+        .paragraf:hover{
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+<h1>GREATEST ANIME EVER <span>&#128293; &#128293; &#128293; &#128293;</span></h1>
+    <img src="../Files/fotomushoku.jpg" alt="Foto-Mushoku-Tensei" width="800" height="500" class="CenterPic">
+    <br>
+    <!--Summary digunakan untuk melakukan kustomisasai tanda details pada tag <details>, tanpa adanya summary tag <details> teksnya akan default
+        menjadi "details"-->
+<br>
+    <details>
+        <summary class="mushoku">Mushoku Tensei</summary> <!--Digunakan untuk mengganti tulisan default pada tag details-->
+            <p>Mushoku Tensei: Isekai Ittara Honki Dasu adalah sebuah seri novel ringan Jepang yang ditulis oleh Rifujin na Magonote. 
+               Mengisahkan tentang seorang pria pengangguran dan putus asa yang bereinkarnasi ke dunia fantasi sambil mempertahankan ingatannya, 
+               ia bertekad untuk menjalani kehidupan barunya tanpa penyesalan.
+            </p> <!--isi dari tag details-->
+    </details>
+    <br>
+    <br>
+    <!--Details yang berada didalam element div yang memiliki class DivBuatan-->
+    <div class="DivBuatan" >
+        <details>
+            <summary class="mushoku">Mushoku Tensei</summary> <!--Digunakan untuk mengganti tulisan default pada tag details-->
+            <p>Mushoku Tensei: Isekai Ittara Honki Dasu adalah sebuah seri novel ringan Jepang yang ditulis oleh Rifujin na Magonote. 
+               Mengisahkan tentang seorang pria pengangguran dan putus asa yang bereinkarnasi ke dunia fantasi sambil mempertahankan ingatannya, 
+               ia bertekad untuk menjalani kehidupan barunya tanpa penyesalan.
+            </p> <!--isi dari tag details-->
+        </details>
+    </div>
+    
+
+    <!--Tag div dan span digunakan untuk mengatur tampilan jumlah macam element dan konten dalam suatu halaman web-->
+
+    <p>
+        Wibu itu <span style="color: red; font-weight: bold;">pintar</span> dan mereka 
+        <span style="color: orange; font-weight: bold;">awet</span> tanpa pengawet
+    </p>
+
+    <div class="DivBuatan"> <!--Class DivBuatan berfungsi untuk melakukan grup pada satu elemen untuk menerapkan style yang berad pada head-->
+        <h2>Siapakah Wibu Itu? </h2>
+        <p class="paragraf">Yang membaca teks ini tentunya.</p>
+    </div>
+
+    <br>
+    <b>iya kamu wibu</b> <!--membuat teks menjadi bold-->
+    <br>
+    <i>iya kamu wibu</i> <!--membuat teks menjadi italic-->
+    <br>
+    <u>iya kamu wibu</u> <!--membuat teks memiliki underline-->
+    <br>
+    <b><u><i>iya kamu wibu</i></u></b> <!--suatu teks dapat memiliki bermacam tag-->
+    <br>
+
+    <p><h2>APA!!!??</h2></p><p>kamu bukan wibu katamu ?</p>
+    <br>
+    
+    <ul> <!--Membuat unordered list yang menampung list atau tag li-->
+        <li>FIX WIBU DENIAL</li> <!--Tag li berfungsi untuk membuat point-->
+    </ul>
+
+    <li>FIX WIBU DENIAL</li><!--Berfungsi untuk membuat point-->
+
+    <hr> <!--Membuat garis horizontal-->
+    <hr>
+    <hr>
+    <hr>
+
+</body>
+
+</html>
