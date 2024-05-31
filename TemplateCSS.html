@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <!--CSS berfungsi untuk mengubah tampilan dari element HTML yang ada di halaman web-->
+    <!--Menentukan aturan standar yang memiliki control tampilan layout halaman-->
+    <!--Digunakan untuk standarisasi tampilan yang ada di halaman web agar konsisten-->
+    <!--CSS mengizinkan aturan atau style lebih dari satu untuk mengatur style dari HTML-->
+    <!--CSS terdiri dari 2 bagian
+        1. Selector 
+            Cara deklarasi selector :
+            selector{
+                //declaraion Block
+                properties: attributes;
+            }
+        2. Declaration Blok (Jika ada "Block" pasti berkaitan dengan tanda kurung)
+    -->
+    <!--
+        CSS memiliki 3 jenis kategori
+        1. Inline Style (Style dalam baris)
+            Di analogikan sebagai warna kulit dan hanya bisa dipakai oleh orang itu sendiri
+            Pengertian dasarnya style ini diatur langsung didalam tag elemen yang ingin diatur style nya
+            digunakan dengan deklarasi attribute "style"
+        2. Internal Style Sheet (Style yang berada didalam style sheet didalam file)
+            digunakan ketika ada banyak element dengan style yang sama
+            di deklarasikan didalam bagian head dan dideklarasikan menggunakan tag <style>
+        3. External Style Sheet (Style yang memiliki style sheet dan memiliki folder exclusive)
+            Berupa dokumen eksklusif yang berisi dengan format bahasa CSS, biasanya digunakan
+            untuk mengatur style banyak halawan web sekaligus dalam tampilan yang sama
+    -->
+
+    <!--
+        skala prioritas dari CSS mulai dari yang paling diutamakan
+        1. Inline
+        2. Internal
+        3. External
+        4. Browser default
+    -->
+
+    <!--
+        User defined CSS adalah CSS yang di deklarasikan oleh developer
+        ada dua tipe CSS selector yaitu
+        1. ID
+            ID adalah styling yang khusus untuk membuat suatu elemen secara eksklusif atau beda sendiri
+            dideklarasikan menggunakan tanda pagar(#)
+            untuk memanggil styling menggunakan attrbute ID didalam tag
+            hanya bisa digunakan sekali untuk satu tag
+        2. Class
+            Class adalah stying yang bisa digunakan banyak tag sekaligus dan 
+            dideklarasikan menggunakan tanda titik(.)
+            untuk memanggil gunakan attribute class
+    -->
+
+    <!--
+        Semantic Tags
+        
+    -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*
+        deklarasi style untuk di implementasikan didalam tag <p>
+        */
+        p{
+            color: blue;
+            font-style: italic;
+            font-size: 20pt;
+        }
+
+        #styleril{
+            color: blueviolet;
+        }
+
+        .color1{
+            color:blue;
+        }
+        
+        p.color2{
+            color: aquamarine;
+        }
+
+    </style>
+    <link rel="stylesheet" href="styling.css">
+    <title>Template CSS</title>
+</head>
+<body style="background-color: beige;">
+
+    <!--Contoh Inline Style-->
+    <h1>Test</h1>
+    <p style="font-size: 24pt; color: red;">Hotel Booking</p>
+    <p>Comparison Hotel Bookiing</p>
+
+    <!--Contoh Internal Style Sheet, tag p terganti style sesuai dengan styling-->
+    <p>Testing paragraph internal style sheet </p>
+
+</body>
+</html>

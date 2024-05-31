@@ -2,82 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <base href="C:\Users\Personal\Desktop\BelajarWebProgramming-CCIT\Tugas Halaman Web\files\">
+    <link rel="stylesheet" href="mawan.css">
+    <base href="C:\Users\personal\OneDrive\Desktop\CCIT Web Programming\Tugas Halaman Web\files\">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .heading{
-            background-color: rgb(197, 228, 255);
-            text-align: center;
-            font-family: 'Franklin Gothic Medium', sans-serif;
-            font-size: 25px;
-            margin-top: -20px;
-            padding: 0.2px;
-        }
-        .cover1{
-            height: 520px;
-            width: 760px;
-            margin-top: -50px;
-            padding-left: 200px;
-            padding-right: 200px;
-            padding-top: 15px;
-        }
-
-        .cover2{
-            height: 520px;
-            width: 320px;
-            padding-left: 50px;
-            padding-top: 15px;
-        }
-
-        .cover3{
-            height: 520px;
-            width: 320px;
-            padding-top: 15px;
-        }
-
-        .horiLine{
-            margin-top: 1px;
-            border: none;
-            height: 12px;
-            background: black;
-            margin-bottom: 50px;
-        }
-
-        .artikel {
-            margin-left: 520px;
-            margin-right: 520px;
-        }
-
-        .font{
-            font-family: 'Franklin Gothic thin', sans-serif;
-        }
-
-        .paraArtikel{
-            font-weight: 100;
-        }
-
-        .sumChar{
-            font-size: 18px;
-            font-weight: bold;
-            font-family: 'Franklin Gothic thin', sans-serif;
-        }
-    </style>
+    <!--Deklarasi style-->  
     <title>Best Anime</title>
 </head>
 <body style="background-color: aliceblue;">
+
+    <!--Bagian judul-->
     <div class="heading">
         <h1>Mushoku Tensei</h1>
     </div>
-    <div>
-        <span><img src="pic cover 2.jpg" alt="" class="cover2"></span>
-        <span ><img src="pic cover.jpg" alt="" class="cover1"></span>
-        <span><img src="pic cover 3.jpg" alt="" class="cover3"></span>
+
+    <!--Bagian header gambar-->
+    <div >
+        <span><img src="pic cover 2.jpg" alt="cover2" class="cover2"></span>
+        <span ><img src="pic cover.jpg" alt="cover1" class="cover1"></span>
+        <span><img src="pic cover 3.jpg" alt="cover3" class="cover3"></span>
     </div>
     <br>
 
+    <!--Pembatas berupa garis-->
     <hr class="horiLine">
 
-    <h2 style="text-align: center; font-size: 28px;">Mushoku Tensei, The First Modern Isekai</h2>
+    <!--Bagian artikel-->
+    <h2 style="text-align: center; font-size: 28px;" class="font">Mushoku Tensei, The First Modern Isekai</h2>
     <div class="artikel">
         <p class="font paraArtikel">"Mushoku Tensei: Jobless Reincarnation" is often hailed as the first modern isekai anime due to its significant contributions to the genre, both in terms of popularizing new tropes and setting higher standards for storytelling. While isekai stories—those featuring characters transported to or reborn in another world—have existed for decades, "Mushoku Tensei" introduced several elements that have since become defining characteristics of the genre.
         </p>
@@ -99,7 +49,7 @@
 
     <hr class="horiLine">
 
-    <h2 style="font-size: 28px; margin-bottom: 50px; text-align: center;">Character</h2>
+    <h2 style="font-size: 28px; margin-bottom: 50px; text-align: center;" class="font">Character</h2>
     <div class="artikel">
         <div><h3 class="font">Rudeus</h3></div>
         <div><img src="rudeus.png" alt="" class="cover3" style="width: 280px; padding-top: 0px;"></div>
@@ -154,6 +104,12 @@
             <video src="erisvid.mp4" controls></video>
         </details>
     </div>
-    <hr class="horiLine" style="margin-bottom: 300px; margin-top: 100px;">
+    <hr class="horiLine" style="margin-top: 50px;">
+
+    <h2 style="font-size: 28px; margin-bottom: 50px; text-align: center;" class="font">Anime Song</h2>
+    <audio src="MTaudio.mp3" controls></audio>
+
+    <hr class="horiLine" style="margin-bottom: 100px; margin-top: 100px;">
+
 </body>
 </html>

@@ -1,0 +1,13 @@
+p {
+    color: red;
+    font-size: 20pt;
+    font-style: italic;
+}
+
+h1{
+    color: blue;
+    font-size: 25pt;
+    font-weight: bold;
+    text-align: center;
+}
+
