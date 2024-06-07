@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // isNaN
+    // Berfungsi untuk mengecek apakah suatu variabel apakah bukan merupakan angka
+    num1 = "Two Thousand";
+    num2 = 8000;
+    Result = isNaN(num1);
+    Res = isNaN(num2);
+
+    // parseInt
+    // berfungsi untuk mengubah string menjadi integer
+    x = "5";
+    resAwal = isNaN(x);
+    alert(resAwal);
+    y = parseInt(x);
+    resAkhir = isNaN(y);
+    alert(resAkhir);
+
+    // parseFloat
+    // mengubah tipe data string menjadi float
+    x = "5.2";
+    resA = isNaN(x);
+    alert(resA);
+    y = parseInt(x);
+    resAk = isNaN(y);
+    alert(resAk);
+
+    // conto eval();
+    // yaitu fungsi utuk mengeksekusi sebuah parameter
+    var res1 = 0;
+    res1 = eval(5+10)
+    alert(res1);
+    eval("num1=5;num2=10;res1=num1")
+</script>
+</body>
+</html>

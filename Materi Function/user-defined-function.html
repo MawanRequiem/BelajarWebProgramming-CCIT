@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function totalBayar(kategori_produk, nama_produk, harga_produk){
+            if(kategori_produk == "Obat"){
+                harga_total = (2.5 / 100) * harga_produk + harga_produk;
+                alert("Total bayar " + nama_produk + " adalah: Rp. " + harga_total);
+            }
+            if (kategori_produk == "Elektronik"){
+                harga_total = harga_produk;
+                alert( "Total bayar " + nama_produk + " adalah: Rp. " + harga_total)
+            }
+        }
+    </script>
+    <title>user defined</title>
+</head>
+<body>
+    <script>
+        kategori_produk1 = "Obat";
+        totalBayar(kategori_produk1, "Minyak Ikan Kod", 80000);
+
+        kategori_produk2 = "Elektronik";
+        totalBayar(kategori_produk2, "Samsung", 10000000)
+    </script>
+</body>
+</html>

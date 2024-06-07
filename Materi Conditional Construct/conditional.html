@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condional Construct</title>
+</head>
+<body>
+    <script>
+        //Contoh IF ... ELSE
+        var age = 5;
+        //Conditional construct adalah sebuah statement yang berfungsi untuk membuat sebuah keputusan berdasar suatu kondisi untuk menghasilkan value true or false
+
+        //Conditional if else berfungsi untuk memabuat sebuah conditional untuk sebuah kondisi yang hanya memiliki satu kondisi dalam satu stemenet if 
+        if (age < 12){ //Jika kondisi benar maka masuk kedalam block if
+            alert("Sorry! this game is for "+
+                "children above 12 Years"
+            );
+        }else{ // Jika kondisi Salah maka masuk kedalam block else
+            alert("Play the game");
+        }
+
+        var day = "5";
+        
+        // Condirional Switch berfungsi untuk program yang memiliki banyak kemungkinan dalam satu case
+        // Garbage collection berfungsi untuk melepaskan resource yang sedang digunakan oleh suatu program 
+
+        switch (day){
+
+            case "1": // Conditional untuk dicocokan suatu nilai
+            alert("Day is Monday");// code block yang akan di run jika conditional bersifat true
+            break; // break berfungsi untuk menghentikan proses pengecekan conditional saat switch berjalan 
+
+            case "2":
+            alert("Day is Tuesday");
+            break;
+
+            case "3":
+            alert("Day is Wednesday");
+            break;
+
+            case "4":
+            alert("Day is Thursday");
+            break;
+
+            case "5":
+            alert("Day is Friday");
+            break;
+
+            case "6":
+            alert("Day is Saturday");
+            break;
+
+            case "7":
+            alert("Day is Sunday");
+            break;
+
+            default:
+            alert("Not a valid number");
+            break;
+
+        }
+    </script>
+</body>
+</html>

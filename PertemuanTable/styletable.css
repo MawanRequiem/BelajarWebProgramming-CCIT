@@ -1,0 +1,27 @@
+th{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 3px;
+    background-color: blue;
+    color: azure;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+caption{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+td{
+    font-size: 15px;
+    border: 1px solid grey;
+    padding: 3px;
+    background-color: azure;
+}
+
+tr.alt td{
+    color: aqua;
+    background-color: rgb(128, 128, 255);
+}

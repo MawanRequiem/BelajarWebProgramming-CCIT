@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+    Prompt adalah fungsi untuk menampilkan jendela pop up
+-->
+
+<!--
+    Tanda kurung biasa () : Berfungsi untuk mengindikasikan code
+    Tanda kurung kurawal {} : Berfungsi untuk menggambarkan block program, statement, atau block code
+    Tanda kurung kotak [] : Berfungsi untuk menandakan suatu array yang berisikan index
+-->
+
+<!-- 
+    Parameter dibagi menjadi 2 yaitu parameter input dan output
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+        Deklarasi pemanggilan javascript dalam HTML 
+    -->
+    <script type="text/javascript">
+        //Proses deklarasi dan inisialisasi data  
+        //Proses inisialisasi dapat dibagi menjadi 2 yaitu direct dan indirect
+        //Jika direct maka variabel akan langsung di isi data
+        //Jika indirect maka variable di isikan oleh user atau pengguna
+        var nama = prompt("Masukan Nama Anda: ");
+
+        //Sebuah pemanggilan method
+        fungsiSaya();
+
+        //Pembuatan function untuk mendefinisikan function fungsiSaya
+        function fungsiSaya() {
+            if(nama == ""){
+                alert("Masukan yang bener kocak");
+            }
+            else{
+                alert(nama);
+            }
+        }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

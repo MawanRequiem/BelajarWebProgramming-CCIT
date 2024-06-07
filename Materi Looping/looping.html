@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Construct</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Looping adalah sebuah statement code yang berfungsi untuk melakukan perulangan terhadap suatu statement
+        // Contoh While ... Do
+        // Sebuah kondisi looping dimana pengecekan kondisi dilakukan diawal 
+        var num = 0;
+        while (num < 20)
+        {
+            num = num + 1;
+            alert(num);
+        }
+
+        // Contoh Do ... While
+        // sebuah looping dimana pengecekan akan dilakukan diakhir perulangan sehingga looping sudah dijalankan satu kali
+        var num = 0;
+        do{
+            num = num + 1;
+            alert(num);
+        } while (num < 20)
+        
+        // Contoh for loop
+        var num;
+        var sum=0;
+        // For memiliki 3 parameter yaitu pertama inisialisasi, destinasi, increament atau decrement
+        for(num=100;num<200;num=num+1){
+            sum=sum+num;
+        }
+        alert(sum);
+    </script>
+</body>
+</html>
