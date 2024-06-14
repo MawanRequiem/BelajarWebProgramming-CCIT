@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyoba</title>
+</head>
+<body>
+    <form id="login-form">
+    <table>
+        <tr>
+            <td>
+                <p>Username :</p>
+            </td>
+            <td>
+                <input type="text" placeholder="Input Email" name="uname">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    Password :
+                </p>
+            </td>
+            <td>
+                <input type="password" placeholder="Input Password" name="pass">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit" name="Submit">Submit</button>
+            </td>
+            <td>
+                <button type="reset">Reset</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+<script>
+
+    const username = document.getElementsByName("uname").value;
+    const password = document.getElementsByName("pass").value;
+
+    form.addEventListener('submit', function(event))
+
+    for (const credential of validCredentials) {
+      if (username.value == "admin" && password.value == "admin") {
+         window.location.href = '/home';
+      } else{
+        alert("false")
+      }
+    } //end of the loop
+    
+    
+
+
+ //end of the callback function
+
+
+</script>
+</body>
+</html>

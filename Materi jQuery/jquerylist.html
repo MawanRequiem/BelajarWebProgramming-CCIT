@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery List</title>
+    <script src="../jquery-1.8.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#read").attr("disabled","disabled")
+            $("#update").attr("disabled","disabled")
+            $("#delete").attr("disabled","disabled")
+            $("#hide").click(function(){
+                $("#menu ul").hide();
+                $("#show").attr("disabled","disabled");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#show").click(function(){
+                $("#menu ul").show();
+                $("#show").hide();
+                $("#hide").show();
+            });
+        });
+
+        $("#create").click(function(){
+                $("#read").attr("enabled","enabled")
+            });
+    </script>
+</head>
+<body>
+    <p>Product Menu</p>
+    <h4>Product Categories</h4>
+    <ul id="menu">
+        <li><a>Laptops</a>
+            <ul>
+                <li><a href="">L-150</a></li>
+                <li><a href="">L-160</a></li>
+                <li><a href="">L-180</a></li>
+                <li><a href="">L-260</a></li>
+                <li><a href="">L-190</a></li>
+            </ul>
+        </li>
+        <li><a>Phones</a>
+            <ul>
+                <li><a href="">P-1150</a></li>
+                <li><a href="">P-2260</a></li>
+                <li><a href="">P-2360</a></li>
+                <li><a href="">P-3260</a></li>
+                <li><a href="">P-9960</a></li>
+            </ul>
+        </li>
+        <li><a>Camera</a>
+            <ul>
+                <li><a href="">C-7710</a></li>
+                <li><a href="">C-6710</a></li>
+                <li><a href="">C-9710</a></li>
+                <li><a href="">C-7512</a></li>
+                <li><a href="">C-1710</a></li>
+            </ul>
+        </li>
+        <li><a>Music Players</a>
+            <ul>
+                <li><a href="">MP-1150</a></li>
+                <li><a href="">MP-1260</a></li>
+                <li><a href="">MP-1370</a></li>
+                <li><a href="">MP-1480</a></li>
+                <li><a href="">MP-1590</a></li>
+            </ul>
+        </li>
+    </ul>
+    <button id="hide">Hide List</button>
+    <button id="show">Show List</button>
+    <br><br>
+    <button id="create">Create</button>
+    <button id="read">Read</button>
+    <button id="update">update</button>
+    <button id="delete">Delete</button>
+</body>
+</html>

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="../jquery-1.8.3.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body{
@@ -22,7 +23,7 @@
 </head>
 <body>
     <center>
-        <form action="registrasi.html">
+        <form>
             <table>
                 <tr class="autostyle">
                     <td colspan="4">Pemesanan Buku Online</td>
@@ -34,48 +35,48 @@
                 <tr>
                     <td>Nama :</td>
                     <td>
-                        <input type="text" name="uName" placeholder="Masukan Nama Anda" required>
+                        <input type="text" name="uName" placeholder="Masukan Nama Anda" >
                     </td>
                 </tr>
 
                 <tr>
                     <td>Tanggal Lahir :</td>
                     <td>
-                        <input type="date" name="dob" required>
+                        <input type="date" name="dob" id="dob" >
                     </td>
                 </tr>
 
                 <tr>
                     <td>E-Mail :</td>
                     <td>
-                        <input type="email" name="mail" required placeholder="Masukan Email Anda">
+                        <input type="email" name="mail"  placeholder="Masukan Email Anda">
                     </td>
                 </tr>
 
                 <tr>
                     <td>Nomor Handphone :</td>
                     <td>
-                        <input type="tel" name="telephone" required placeholder="Masukan Nomor HP Anda">
+                        <input type="tel" name="telephone"  placeholder="Masukan Nomor HP Anda">
                     </td>
                 </tr>
 
                 <tr>
                     <td>Pilih Buku :</td>
                     <td>
-                        Fiksi <input type="radio" name="rd1">
-                        Non-Fiksi <input type="radio" name="rd1">
+                        Fiksi <input type="radio" name="rd1" value="Fiksi">
+                        Non-Fiksi <input type="radio" name="rd1" value="Non-Fiksi">
                     </td>
                 </tr>
 
                 <tr>
                     <td>Pilih Penulis :</td>
                     <td>
-                        <select>
+                        <select id="penulis">
                             <option value="opt1">Pilih Penulis</option>
-                            <option value="opt2">Hilmi The Pick Me</option>
-                            <option value="opt3">Lana Del Rey</option>
-                            <option value="opt4">Wibu Venu</option>
-                            <option value="opt5">Wota Vaiku</option>
+                            <option value="Hilmi The Pick Me">Hilmi The Pick Me</option>
+                            <option value="Lana Del Rey">Lana Del Rey</option>
+                            <option value="Wibu Venu">Wibu Venu</option>
+                            <option value="Wota Vaiku">Wota Vaiku</option>
                         </select>
                     </td>
                 </tr>
@@ -87,17 +88,17 @@
                     <td>
                         <fieldset>
                             Kategori :
-                            <select>
+                            <select id="kategori">
                                 <option value="opt1">Pilih Penulis</option>
-                                <option value="opt2">Fiksi</option>
-                                <option value="opt3">Non Fiksi</option>
+                                <option value="Fiksi">Fiksi</option>
+                                <option value="Non Fiksi">Non Fiksi</option>
                             </select>
                             Genre :
-                            <select>
+                            <select id="genre">
                                 <option value="opt4">Pilih Genre</option>
-                                <option value="opt5">Comedy</option>
-                                <option value="opt6">Romance</option>
-                                <option value="opt7">Misteri</option>
+                                <option value="Comedy">Comedy</option>
+                                <option value="Romance">Romance</option>
+                                <option value="Misteri">Misteri</option>
                             </select>
                         </fieldset>
                     </td>
@@ -109,9 +110,9 @@
                     </td>
                     <td>
                         <label for="pickup">Pick Up</label>
-                        <input type="radio" name="pickup" id="pickup">
+                        <input type="radio" name="pickup" id="pickup" value="Pick Up">
                         <label for="home">Home Delivery</label>
-                        <input type="radio" name="pickup" id="home">
+                        <input type="radio" name="pickup" id="home" value="Home Delivery">
                     </td>
                 </tr>
 
@@ -142,12 +143,41 @@
 
                 <tr class="autostyle">
                     <td colspan="4">
-                        <button id="button" type="submit">Submit</button>
+                        <button onclick="inputdata()">Submit</button>
                         <button type="reset">Reset</button>
                     </td>
                 </tr>
             </table>
+            
         </form>
     </center>
+
+    <script type="text/javascript" src="../jquery-1.8.3.js">
+        function inputdata(){
+            var nama = document.getElementsByName("uName")[0].value;
+            var dob = document.getElementById("dob").value;
+            var mail = document.getElementsByName("mail")[0].value;
+            var telepon = document.getElementsByName("telephone")[0].value;
+            var buku = document.querySelector('input[name="rd1"]:checked').value;
+            var penulis = document.getElementById('penulis').value;
+            var kategori = document.getElementById('kategori').value;
+            var genre = document.getElementById('genre').value;
+            var pickup = document.querySelector('input[name="pickup"]:checked').value;
+            var orderFor = document.getElementById('Orderfor').value;
+            var kota = document.getElementById('city').value;
+
+
+            var dob = new Date(dob);
+            var day = dob.getDate();
+            var month = dob.getMonth() + 1;
+            var year = dob.getFullYear();
+
+
+
+            document.write(nama + "<br>" + day +"/"+month+"/"+year + "<br>" + mail + "<br>" + telepon +"<br>" + buku+"<br>"
+            + penulis +"<br>"+kategori+"<br>"+genre+"<br>"+pickup+"<br>"+orderFor+"<br>"+kota
+            );
+        }
+    </script>
 </body>
 </html>

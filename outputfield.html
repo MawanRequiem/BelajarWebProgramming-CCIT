@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(127, 227, 255);
+        }
+    </style>
+    <title>Output Field</title>
+</head>
+<body>
+    <center>
+        <form oninput="mul.value=parseInt(val1.value)*parseInt(val2.value)">
+            Hitung Ongkir
+            <br><br>
+            Berat (Kg) : <input type="text" name="val1">
+            <br><br>
+            Jarak (Km) : <input type="text" name="val2">
+            <br><br>
+            <output name="mul" for="val1 val2"></output>
+        </form>
+    </center>   
+    <br><br>
+
+    <center>
+        <form oninput="jajan.value=parseInt(harimasuk.value)*parseInt(uang.value)-parseInt(harilibur.value)*(uang.value)">
+            Hitung Jajan Perbulan
+            <br><br>
+            Jumlah Hari Masuk : <input type="text" name="harimasuk">
+            <br><br>
+            Jumlah Hari Libur : <input type="text" name="harilibur">
+            <br><br>
+            Uang Jajan per Hari : <input type="text" name="uang">
+            <br><br>
+            <output name="jajan" for="harilibur harimasuk uang"></output>
+        </form>
+    </center>
+</body>
+</html>

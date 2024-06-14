@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jquery-1.8.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#regis").hide();
+            $("#log").click(function(){
+                $("#login").show();
+                $("#regis").hide();
+            })
+            $("#reg").click(function(){
+                $("#regis").show();
+                $("#login").hide();
+            });
+            $("#input-login").click(function(){
+                caraLogin();
+            })
+        });
+
+        function caraLogin(){
+            var unamelogin = document.getElementById("unamelog")[0].value;
+            var passlogin = document.getElementById("pass")[0].value;
+
+            if(unamelogin === "admin" && passlogin ==="admin"){
+                window.open("jQuery1.html");
+            }else{
+                alert("Password Salah")
+            }
+        }
+    </script>
+    <title>Text Input</title>
+</head>
+<body>
+    <center>
+        <button id="log">Menu Login</button>
+        <button id="reg">Menu Registrasi</button>
+        <div id="login">
+            <h1>Login</h1>
+            Username
+            <br>
+            <input type="text" id="unamelog">
+            <br>
+            Password
+            <br>
+            <input type="password" id="pass">
+            <br><br>
+            <button id="input-login">Login</button>
+        </div>
+    
+        <div id="regis">
+            <h1>Registrasi</h1>
+            Username
+            <br>
+            <input type="text" id="unamereg">
+            <br>
+            Password
+            <br>
+            <input type="password" id="passreg">
+            <br>
+            Email
+            <br>
+            <input type="email" id="emailreg">
+            <br>
+            Telephone
+            <br>
+            <input type="tel" id="telreg">
+            <br><br>
+            <button>Registrasi</button>
+        </div>
+    </center>
+</body>
+</html>

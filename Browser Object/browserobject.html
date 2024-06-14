@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!--
+    Browser 
+    browser object
+    open
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript">
+        function open_win(){
+            //window.open("wibu.html");
+            window.open("wibu.html", "Halaman Wibu", "height=100,width=200", true);
+        }
+
+        function document_write(){
+            var name = prompt("Please enter your name ","");
+            document.write("<p><i><b> Welcome "+name+" Wibu!</p></i></b>")
+        }
+
+        function documents_getElementsByName(){
+            var x = document.getElementsByName("uName")[0].value;
+            alert("Nama Anda : Wibu"+x);
+        }
+
+        function documents_getElementsByTagName(){
+            var x = document.getElementsByTagName("input")[0].value;
+            alert("Nama Anda : Wibu"+x);
+        }
+
+        function documents_getElementsById(){
+            var x = document.getElementById("wibu").value;
+            alert("Nama Anda : Wibu"+x);
+        }
+    </script>
+
+    <title>Browser Object</title>
+</head>
+<body>
+    <button onclick="open_win()">window.open();</button>
+    <br><br>
+    <button onclick="document_write()">document_write();</button>
+    <br><br>
+    <input type="text" id="wibu" name="uName" placeholder="Masukan Nama Anda">
+    <br><br>
+    <button onclick="documents_getElementsByName()">documents_getElementsByName();</button>
+    <br><br>
+    <button onclick="documents_getElementsByTagName()">documents_getElementsByTagName();</button>
+    <br><br>
+    <button onclick="documents_getElementsById()">documents_getElementsById();</button>
+</body>
+</html>
